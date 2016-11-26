@@ -1,0 +1,444 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:res
+LIBS:vbb-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BARREL_JACK CON1
+U 1 1 582B720A
+P 4050 1200
+F 0 "CON1" H 4032 1525 50  0000 C CNN
+F 1 "BARREL_JACK" H 4032 1434 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 4050 1200 50  0001 C CNN
+F 3 "" H 4050 1200 50  0000 C CNN
+	1    4050 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J1
+U 1 1 582B7274
+P 1650 1200
+F 0 "J1" H 1730 1542 50  0000 C CNN
+F 1 "Screw_Terminal_1x02" H 1730 1451 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 1650 975 50  0001 C CNN
+F 3 "" H 1625 1200 50  0001 C CNN
+	1    1650 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B P5
+U 1 1 582B72CE
+P 4050 2500
+F 0 "P5" V 4030 2687 50  0000 L CNN
+F 1 "USB_B" V 4121 2687 50  0000 L CNN
+F 2 "Connect:USB_Mini-B" V 4000 2400 50  0001 C CNN
+F 3 "" V 4000 2400 50  0000 C CNN
+	1    4050 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER_NO_Small JP10
+U 1 1 582BF062
+P 3300 3750
+F 0 "JP10" H 3450 3800 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 3844 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 3750 50  0001 C CNN
+F 3 "" H 3300 3750 50  0000 C CNN
+	1    3300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3750 3400 3750
+Wire Wire Line
+	3650 4050 3750 4050
+$Comp
+L JUMPER_NO_Small JP11
+U 1 1 582BF8FD
+P 3300 3850
+F 0 "JP11" H 3450 3900 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 3944 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 3850 50  0001 C CNN
+F 3 "" H 3300 3850 50  0000 C CNN
+	1    3300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER_NO_Small JP12
+U 1 1 582BFA85
+P 3300 3950
+F 0 "JP12" H 3450 4000 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 4044 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 3950 50  0001 C CNN
+F 3 "" H 3300 3950 50  0000 C CNN
+	1    3300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3850 3400 3850
+Wire Wire Line
+	3750 3950 3400 3950
+$Comp
+L USB_A P7
+U 1 1 582BFC25
+P 4050 3950
+F 0 "P7" V 4030 4138 50  0000 L CNN
+F 1 "USB_A" V 4121 4138 50  0000 L CNN
+F 2 "Connect:USB_A" V 4000 3850 50  0001 C CNN
+F 3 "" V 4000 3850 50  0000 C CNN
+	1    4050 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER_NO_Small JP4
+U 1 1 582BFDB7
+P 3300 2300
+F 0 "JP4" H 3450 2350 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 2394 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 2300 50  0001 C CNN
+F 3 "" H 3300 2300 50  0000 C CNN
+	1    3300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2300 3400 2300
+Wire Wire Line
+	3650 2600 3750 2600
+$Comp
+L JUMPER_NO_Small JP5
+U 1 1 582BFDBF
+P 3300 2400
+F 0 "JP5" H 3450 2450 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 2494 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 2400 50  0001 C CNN
+F 3 "" H 3300 2400 50  0000 C CNN
+	1    3300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER_NO_Small JP6
+U 1 1 582BFDC5
+P 3300 2500
+F 0 "JP6" H 3450 2550 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 2594 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 2500 50  0001 C CNN
+F 3 "" H 3300 2500 50  0000 C CNN
+	1    3300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2400 3400 2400
+Wire Wire Line
+	3750 2500 3400 2500
+$Comp
+L USB_B P4
+U 1 1 582BFEED
+P 4050 1800
+F 0 "P4" V 4030 1987 50  0000 L CNN
+F 1 "USB_B" V 4121 1987 50  0000 L CNN
+F 2 "Connect:USB_B" V 4000 1700 50  0001 C CNN
+F 3 "" V 4000 1700 50  0000 C CNN
+	1    4050 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER_NO_Small JP1
+U 1 1 582BFEF3
+P 3300 1600
+F 0 "JP1" H 3450 1650 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 1694 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 1600 50  0001 C CNN
+F 3 "" H 3300 1600 50  0000 C CNN
+	1    3300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1600 3400 1600
+Wire Wire Line
+	3750 1700 3400 1700
+Wire Wire Line
+	3750 1800 3400 1800
+Wire Wire Line
+	3750 1300 3750 1200
+Wire Wire Line
+	1850 1300 3750 1300
+Wire Wire Line
+	3650 1300 3650 4250
+Connection ~ 3650 1900
+Connection ~ 3650 1300
+Connection ~ 3650 2600
+Wire Wire Line
+	1850 1100 3750 1100
+Wire Wire Line
+	1650 1600 3200 1600
+Wire Wire Line
+	2800 1100 2800 3750
+Connection ~ 2800 1100
+Wire Wire Line
+	2600 2300 3200 2300
+Connection ~ 2800 1600
+Wire Wire Line
+	2800 3750 3200 3750
+Connection ~ 2800 2300
+$Comp
+L JUMPER_NO_Small JP3
+U 1 1 582BFF01
+P 3300 1800
+F 0 "JP3" H 3450 1850 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 1894 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 1800 50  0001 C CNN
+F 3 "" H 3300 1800 50  0000 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER_NO_Small JP2
+U 1 1 582BFEFB
+P 3300 1700
+F 0 "JP2" H 3450 1750 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 1794 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 1700 50  0001 C CNN
+F 3 "" H 3300 1700 50  0000 C CNN
+	1    3300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B P6
+U 1 1 582C0C06
+P 4050 3200
+F 0 "P6" V 4030 3387 50  0000 L CNN
+F 1 "USB_B" V 4121 3387 50  0000 L CNN
+F 2 "Connect:USB_Micro-B" V 4000 3100 50  0001 C CNN
+F 3 "" V 4000 3100 50  0000 C CNN
+	1    4050 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 3000 3400 3000
+Wire Wire Line
+	3650 3300 3750 3300
+Wire Wire Line
+	3750 3100 3400 3100
+Wire Wire Line
+	3750 3200 3400 3200
+$Comp
+L JUMPER_NO_Small JP7
+U 1 1 582C0CAD
+P 3300 3000
+F 0 "JP7" H 3450 3050 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 3094 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 3000 50  0001 C CNN
+F 3 "" H 3300 3000 50  0000 C CNN
+	1    3300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER_NO_Small JP8
+U 1 1 582C0CB3
+P 3300 3100
+F 0 "JP8" H 3450 3150 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 3194 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 3100 50  0001 C CNN
+F 3 "" H 3300 3100 50  0000 C CNN
+	1    3300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER_NO_Small JP9
+U 1 1 582C0CB9
+P 3300 3200
+F 0 "JP9" H 3450 3250 50  0000 C CNN
+F 1 "JUMPER_NO_Small" H 3300 3294 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 3200 50  0001 C CNN
+F 3 "" H 3300 3200 50  0000 C CNN
+	1    3300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3000 3200 3000
+Connection ~ 2800 3000
+Text Notes 7450 7500 0    60   ~ 0
+Vcc breakout board
+$Comp
+L CONN_02X04 P3
+U 1 1 582C1756
+P 2350 2450
+F 0 "P3" H 2350 2815 50  0000 C CNN
+F 1 "CONN_02X04" H 2350 2724 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 2350 1250 50  0001 C CNN
+F 3 "" H 2350 1250 50  0000 C CNN
+	1    2350 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2300 2700 2600
+Wire Wire Line
+	2700 2400 2600 2400
+Connection ~ 2700 2300
+Wire Wire Line
+	2700 2600 2600 2600
+Connection ~ 2700 2400
+Wire Wire Line
+	2700 2500 2600 2500
+Connection ~ 2700 2500
+Wire Wire Line
+	2000 1900 2000 2600
+Wire Wire Line
+	1650 2300 2100 2300
+Wire Wire Line
+	2000 2400 2100 2400
+Connection ~ 2000 2300
+Wire Wire Line
+	2000 2500 2100 2500
+Connection ~ 2000 2400
+Wire Wire Line
+	2000 2600 2100 2600
+Connection ~ 2000 2500
+Text Label 1950 1300 0    60   ~ 0
+GND
+Text Label 1950 1100 0    60   ~ 0
+VCC
+$Comp
+L Res R1
+U 1 1 582CA1DC
+P 3900 2100
+F 0 "R1" H 3900 2337 60  0000 C CNN
+F 1 "33K" H 3900 2231 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3900 2100 60  0001 C CNN
+F 3 "" H 3900 2100 60  0000 C CNN
+	1    3900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res R2
+U 1 1 582CAA4F
+P 3900 2800
+F 0 "R2" H 3900 3037 60  0000 C CNN
+F 1 "33K" H 3900 2931 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3900 2800 60  0001 C CNN
+F 3 "" H 3900 2800 60  0000 C CNN
+	1    3900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res R3
+U 1 1 582CAB11
+P 3900 3500
+F 0 "R3" H 3900 3737 60  0000 C CNN
+F 1 "33K" H 3900 3631 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3900 3500 60  0001 C CNN
+F 3 "" H 3900 3500 60  0000 C CNN
+	1    3900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res R4
+U 1 1 582CADA9
+P 3900 4250
+F 0 "R4" H 3900 4487 60  0000 C CNN
+F 1 "33K" H 3900 4381 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3900 4250 60  0001 C CNN
+F 3 "" H 3900 4250 60  0000 C CNN
+	1    3900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4250 3700 4250
+Connection ~ 3650 4050
+Wire Wire Line
+	3700 3500 3650 3500
+Connection ~ 3650 3500
+Wire Wire Line
+	4150 3500 4100 3500
+Wire Wire Line
+	4150 4250 4100 4250
+Wire Wire Line
+	4100 2100 4150 2100
+Wire Wire Line
+	4150 2800 4100 2800
+Wire Wire Line
+	3700 2800 3650 2800
+Connection ~ 3650 2800
+Wire Wire Line
+	3700 2100 3650 2100
+Connection ~ 3650 2100
+Wire Wire Line
+	3050 3950 3200 3950
+Wire Wire Line
+	3050 1800 3050 3950
+Wire Wire Line
+	3050 3200 3200 3200
+Wire Wire Line
+	3050 2500 3200 2500
+Connection ~ 3050 3200
+Wire Wire Line
+	3050 1800 3200 1800
+Connection ~ 3050 2500
+Wire Wire Line
+	3100 3850 3200 3850
+Wire Wire Line
+	3100 1700 3100 3850
+Wire Wire Line
+	3100 3100 3200 3100
+Wire Wire Line
+	3100 2400 3200 2400
+Connection ~ 3100 3100
+Wire Wire Line
+	3100 1700 3200 1700
+Connection ~ 3100 2400
+$Comp
+L CONN_02X01 P1
+U 1 1 582CF8F2
+P 1650 2050
+F 0 "P1" V 1604 2128 50  0000 L CNN
+F 1 "CONN_02X01" V 1650 1450 50  0000 L CNN
+F 2 "Connect:Banana_Jack_2Pin" H 1650 850 50  0001 C CNN
+F 3 "" H 1650 850 50  0000 C CNN
+	1    1650 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1900 3750 1900
+Wire Wire Line
+	1650 1800 1650 1600
+$EndSCHEMATC
