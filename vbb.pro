@@ -1,4 +1,4 @@
-update=17-Nov-16 1:47:43 AM
+update=27-Nov-16 2:06:25 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,3 +69,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=res
+LibName31=Y:/Ubuntu One/KiCad/lib/omron
