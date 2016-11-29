@@ -1,4 +1,4 @@
-update=27-Nov-16 2:06:25 AM
+update=29-Nov-16 9:05:12 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,7 +37,7 @@ LabSize=60
 ERC_TestSimilarLabels=1
 [eeschema]
 version=1
-LibDir=Y:/Ubuntu One/KiCad/lib;Y:/Ubuntu One/KiCad/lib/3d_conn_screw
+LibDir=../lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -69,4 +69,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=res
-LibName31=Y:/Ubuntu One/KiCad/lib/omron
+LibName31=omron
