@@ -278,7 +278,7 @@ F 3 "" H 1650 1250 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3950 1900 4050 1900
+	2000 1900 4050 1900
 Wire Wire Line
 	1650 2200 1650 1600
 $Comp
