@@ -95,7 +95,7 @@ L USB_B P6
 U 1 1 582C0C06
 P 4750 4500
 F 0 "P6" V 4730 4687 50  0000 L CNN
-F 1 "USB_B" V 4450 4550 50  0000 L CNN
+F 1 "Micro_B" V 4450 4550 50  0000 L CNN
 F 2 "w_conn_pc:conn_usb_B_micro_smd" V 4700 4400 50  0001 C CNN
 F 3 "" V 4700 4400 50  0000 C CNN
 	1    4750 4500
@@ -163,22 +163,11 @@ F 3 "" H 4600 5150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X01 P1
-U 1 1 582CF8F2
-P 1100 1850
-F 0 "P1" V 1054 1928 50  0000 L CNN
-F 1 "CONN_02X01" V 1100 1250 50  0000 L CNN
-F 2 "Connect:Banana_Jack_2Pin" H 1100 650 50  0001 C CNN
-F 3 "" H 1100 650 50  0000 C CNN
-	1    1100 1850
-	0    1    1    0   
-$EndComp
-$Comp
 L XM7D-0512 J2
 U 1 1 583A199E
 P 4850 2900
 F 0 "J2" H 4857 3415 50  0000 C CNN
-F 1 "XM7D-0512" H 4857 3324 50  0000 C CNN
+F 1 "Mini-B" H 4857 3324 50  0000 C CNN
 F 2 "Omron:XM7D-0512" H 4850 2900 60  0001 C CNN
 F 3 "" H 4850 2900 60  0000 C CNN
 	1    4850 2900
@@ -248,14 +237,30 @@ F 1 "CONN_02X02" H 1650 2024 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x02_Pitch2.54mm" H 1650 650 50  0001 C CNN
 F 3 "" H 1650 650 50  0001 C CNN
 	1    1650 1850
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
+Text Label 1250 1600 0    60   ~ 0
+VCC1
+Text Label 1950 1100 0    60   ~ 0
+VCC2
+Text Label 1300 2100 0    60   ~ 0
+GND1
+Text Label 1900 1300 0    60   ~ 0
+GND2
+Text Label 3900 1800 0    60   ~ 0
+VCC3
+Text Label 3900 2700 0    60   ~ 0
+VCC4
+Text Label 3900 4300 0    60   ~ 0
+VCC5
+Text Label 3900 5500 0    60   ~ 0
+VCC6
 Wire Wire Line
-	4400 5500 3800 5500
+	3950 5500 3800 5500
 Wire Wire Line
-	4450 5600 3800 5600
+	3800 5600 4450 5600
 Wire Wire Line
-	4450 5700 3800 5700
+	3800 5700 4450 5700
 Wire Wire Line
 	4450 2700 3800 2700
 Wire Wire Line
@@ -340,7 +345,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 3600 5000 3350
 Wire Wire Line
-	4350 1250 4350 5250
+	4350 1250 4350 6450
 Connection ~ 3100 4400
 Connection ~ 3050 4500
 Connection ~ 2800 4300
@@ -376,11 +381,11 @@ Connection ~ 4350 5150
 Wire Wire Line
 	4850 5150 4850 5300
 Wire Wire Line
-	4850 5150 4800 5150
+	4800 5150 5300 5150
 Wire Wire Line
-	4400 5500 4400 5900
+	3950 5500 3950 7200
 Wire Wire Line
-	4400 5900 4450 5900
+	3950 5900 4450 5900
 Wire Wire Line
 	4450 2200 4400 2200
 Wire Wire Line
@@ -423,7 +428,7 @@ Connection ~ 5250 1250
 Wire Wire Line
 	2100 2700 2000 2700
 Wire Wire Line
-	1100 1600 1300 1600
+	1200 1600 1300 1600
 Wire Wire Line
 	1300 1600 1300 1800
 Wire Wire Line
@@ -433,7 +438,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 1900 1300 2100
 Wire Wire Line
-	1300 2100 1100 2100
+	1300 2100 1200 2100
 Wire Wire Line
 	1900 1900 2000 1900
 Connection ~ 2000 2100
@@ -441,20 +446,62 @@ Wire Wire Line
 	2150 1300 2150 1250
 Wire Wire Line
 	2150 1250 2200 1250
-Text Label 1250 1600 0    60   ~ 0
-VCC1
-Text Label 1950 1100 0    60   ~ 0
-VCC2
-Text Label 1300 2100 0    60   ~ 0
-GND1
-Text Label 1900 1300 0    60   ~ 0
-GND2
-Text Label 3900 1800 0    60   ~ 0
-VCC3
-Text Label 3900 2700 0    60   ~ 0
-VCC4
-Text Label 3900 4300 0    60   ~ 0
-VCC5
-Text Label 3900 5500 0    60   ~ 0
-VCC6
+$Comp
+L USB_A P1
+U 1 1 58FBEED8
+P 4700 7000
+F 0 "P1" V 4680 7188 50  0000 L CNN
+F 1 "USB_A" V 4400 7050 50  0000 L CNN
+F 2 "udif:MOLEX-48037-0001" V 4650 6900 50  0001 C CNN
+F 3 "" V 4650 6900 50  0000 C CNN
+	1    4700 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 7200 4400 7200
+Connection ~ 3950 5900
+Wire Wire Line
+	4400 7000 4050 7000
+Wire Wire Line
+	4050 7000 4050 5700
+Connection ~ 4050 5700
+Wire Wire Line
+	4400 6900 4150 6900
+Wire Wire Line
+	4150 6900 4150 5600
+Connection ~ 4150 5600
+Wire Wire Line
+	4800 6600 4800 6450
+Wire Wire Line
+	4800 6450 5300 6450
+Wire Wire Line
+	5300 6450 5300 5150
+Connection ~ 4850 5150
+Wire Wire Line
+	4350 6450 4700 6450
+Wire Wire Line
+	4700 6450 4700 6600
+Connection ~ 4350 5250
+$Comp
+L CONN_01X01 J6
+U 1 1 58FBF3BD
+P 1000 1600
+F 0 "J6" H 1078 1641 50  0000 L CNN
+F 1 "CONN_01X01" H 1078 1550 50  0000 L CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 1000 1600 50  0001 C CNN
+F 3 "" H 1000 1600 50  0001 C CNN
+	1    1000 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J5
+U 1 1 58FBF429
+P 1000 2100
+F 0 "J5" H 1078 2141 50  0000 L CNN
+F 1 "CONN_01X01" H 1078 2050 50  0000 L CNN
+F 2 "Connectors:Banana_Jack_1Pin" H 1000 2100 50  0001 C CNN
+F 3 "" H 1000 2100 50  0001 C CNN
+	1    1000 2100
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
