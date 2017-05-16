@@ -22,3 +22,4 @@ TBD
 ![Top, USB-A Female](vbb-usba-female-top.jpg)
 ![Bottom, USB-A Male](vbb-usba-male-bottom.jpg)
 ![Bottom, USB-A Female](vbb-usba-female-bottom.jpg)
+![Actual board, no USB-A connector soldered](vbb-v1_0-actual.jpg)
